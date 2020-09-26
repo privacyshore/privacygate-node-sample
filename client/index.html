@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinbase Commerce</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="container grid-sm flex-centered h100">
+
+            <div class="card">
+                <div class="card-header">
+
+                    <div class="tile">
+                        <div class="tile-icon">
+                            <figure class="product-icon avatar" data-initial="$99"></figure>
+                        </div>
+                        <div class="tile-content">
+                            <div class="tile-title text-bold">Monthly subscription</div>
+                            <div class="text-sm">Payment per month</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <input class="slider" type="range" min="1" max="12" step="1" v-model="count">
+
+                    <div class="mt">
+                        <span class="text-sm text-secondary mr05">Total: </span>
+                        <span> {{total}} USD</span>
+                    </div>
+
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary btn-block btn-lg" @click="submit">Coinbase Pay</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

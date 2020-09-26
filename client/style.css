@@ -1,0 +1,43 @@
+body, html {
+    background: #f2f2f2;
+}
+
+.h100 {
+    height: 100vh;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.tile {
+    align-items: center;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-secondary {
+    color: rgb(59 67 81 / 80%) !important;
+}
+
+.product-icon {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    color:rgb(59 67 81 / 80%);
+    font-weight: bold;
+    border-radius: 5px;
+
+    margin: 0;
+    margin-right: 1rem;
+}

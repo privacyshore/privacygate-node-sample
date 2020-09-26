@@ -1,0 +1,32 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node .",
+        "build": "cross-env NODE_ENV=production webpack --progress"
+    },
+    "dependencies": {
+        "@koa/cors": "3.1.0",
+        "@koa/router": "9.3.1",
+        "coinbase-commerce-node": "^1.0.4",
+        "koa": "2.13.0",
+        "koa-bodyparser": "4.3.0",
+        "nedb-promises": "4.0.4"
+    },
+    "devDependencies": {
+        "@babel/core": "7.9.6",
+        "@babel/node": "7.8.7",
+        "@babel/plugin-transform-runtime": "7.10.0",
+        "@babel/preset-env": "7.11.5",
+        "@babel/runtime": "7.10.0",
+        "babel-loader": "8.1.0",
+        "cross-env": "6.0.3",
+        "nodemon": "2.0.3",
+        "webpack": "4.41.2",
+        "webpack-cli": "3.3.10"
+    },
+    "author": "",
+    "license": "ISC"
+}
