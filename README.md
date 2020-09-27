@@ -40,3 +40,7 @@ Webhook endpoint `http://localhost:3000/coinbase-webhook` => `https://<ngrok-hos
 $ npm run start 
 $ npm run build
 ```
+
+## Articles
+
+[Accept cryptocurrency payments with Coinbase Commerce](https://medium.com/marcius-studio/accept-cryptocurrency-payments-with-coinbase-commerce-b70f7ad3eba0)
