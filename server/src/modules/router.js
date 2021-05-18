@@ -23,8 +23,8 @@ router.get('/checkout', async (ctx, next) => {
 router.post('/coinbase-webhook', async (ctx, next) => {
 	const request = ctx.request.body
 
-	if (request) {
-		const id = request.event.id
+	if (request && request.event && request.event.data && request.event.data.id) {
+		const id = request.event.data.id
 		const event = request.event.type
 
 		if (event == 'charge:confirmed') return successPayment(id)
