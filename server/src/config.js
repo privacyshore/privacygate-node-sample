@@ -1,5 +1,5 @@
 const config = {
-    coinbase: '<API>',
+    privacygate: '<API_KEY>',
 }
 
 global.config = config

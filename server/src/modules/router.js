@@ -2,7 +2,7 @@ import Router from '@koa/router'
 
 const router = new Router()
 
-import { checkout, successPayment, updatePayment, deletePayment } from './coinbase'
+import { checkout, successPayment, updatePayment, deletePayment } from './privacygate'
 
 router.get('/', async (ctx, next) => {
 	ctx.body = 'Endpoint ready'
@@ -16,11 +16,11 @@ router.get('/checkout', async (ctx, next) => {
 		return ctx.body = await checkout(params)
 	}
 
-	ctx.body = 'Coinbase Commerce checkout endpoint'
+	ctx.body = 'PrivacyGate checkout endpoint'
 })
 
 // webhook endpoint
-router.post('/coinbase-webhook', async (ctx, next) => {
+router.post('/privacygate-webhook', async (ctx, next) => {
 	const request = ctx.request.body
 
 	if (request && request.event && request.event.data && request.event.data.id) {
@@ -32,7 +32,7 @@ router.post('/coinbase-webhook', async (ctx, next) => {
 		else if (event == 'charge:failed' || event == 'charge:delayed' || event == 'charge:resolved') return deletePayment(id)
 	}
 
-	ctx.body = 'Coinbase Commerce Webhook endpoint'
+	ctx.body = 'PrivacyGate Webhook endpoint'
 })
 
 export default router

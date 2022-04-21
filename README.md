@@ -2,7 +2,8 @@
 
 Full-stack integration crypto-payments for Nodejs
 
-![](/127.0.0.1_5500.jpg)
+![](/127.0.0.1_5500.png)
+![](/tutorial.gif)
 
 ## Features
 
@@ -20,19 +21,19 @@ Full-stack integration crypto-payments for Nodejs
 
 ## Server
 
-Coinbase Commerce uses [Webhooks](https://commerce.coinbase.com/docs/api/#webhooks) to transfer payment information. In development to make local endpoint public, need to use [Ngrok](https://ngrok.com).
+PrivacyGate uses [Webhooks](https://privacygate.io/docs/#webhooks) to transfer payment information. In development to make local endpoint public, need to use [Ngrok](https://ngrok.com).
 
 ```node
 $ ngrok http 3000 // after installation, run command
 ```
 
-Webhook endpoint `http://localhost:3000/coinbase-webhook` => `https://<ngrok-host>/coinbase-webhook`
+Webhook endpoint `http://localhost:3000/privacygate-webhook` => `https://<ngrok-host>/privacygate-webhook`
 
 ### Endpoints
 
 * `localhost:3000/` - check endpoint
 * `localhost:3000/checkout?total=99&count=1` - create payment url
-* `localhost:3000/coinbase-webhook` - webhook
+* `localhost:3000/privacygate-webhook` - webhook
 
 ### Commands
 
@@ -43,4 +44,4 @@ $ npm run build
 
 ## Articles
 
-[Accept cryptocurrency payments with Coinbase Commerce](https://medium.com/marcius-studio/accept-cryptocurrency-payments-with-coinbase-commerce-b70f7ad3eba0)
+[Accept cryptocurrency payments with PrivacyGate](...)
