@@ -2,7 +2,7 @@
 
 Full-stack integration crypto-payments for Nodejs
 
-![](/127.0.0.1_5500.png)
+<!-- ![](/127.0.0.1_5500.png) -->
 ![](/tutorial.gif)
 
 ## Features
