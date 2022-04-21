@@ -1,4 +1,4 @@
-# Сoinbase Сommerce Nodejs
+# PrivacyGate Nodejs
 
 Full-stack integration crypto-payments for Nodejs
 
